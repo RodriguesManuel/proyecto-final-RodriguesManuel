@@ -1,0 +1,243 @@
+/*DISEÑO CELULAR-media queries-INDEX*/
+
+@media screen and (max-width: 768px){
+
+.pie-pagina{
+	background-position: bottom right;
+	display:grid;
+	height: 700px;
+	grid-template-columns: 1fr;
+	justify-items: center;
+    text-align: center;
+		}
+
+.cards-container{
+	display: grid;
+	column-gap: 5px;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	}
+
+#footer{
+	display:grid;
+	height: 700px;
+	grid-template-columns:1fr;
+	text-align: center;
+	}
+
+
+.grid-gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+
+.tecnologia h3{
+	font-size: 30px;
+	text-align: center;
+	} 
+
+}
+
+@media screen and (max-width: 480px){
+    
+/*Menu Navegacion*/
+    nav{
+		display:grid;
+		align-items: end;
+	}
+	
+	.container-fluid{
+		background:yellowgreen;
+		display: flex;	
+	}
+	
+	.navbar-nav a{
+		color: white;
+		font-size: 20px;
+		align-content: end;
+	}    
+
+/*MAIN-Maquinas,Clases,Instalaciones*/
+    .contenedor-padre{
+		display: grid;
+		column-gap: 5px;
+		height: 1000px;
+		justify-content:center;
+   }
+
+   .sobre-nosotros{
+	justify-content: center;
+
+	h3{
+		font-size: 20px;
+}
+
+	p{
+    line-height: 30px;
+    font-size: 15px;
+}
+
+}
+
+/*FOOTER*/
+
+.pie-pagina{
+	background-position: bottom right;
+	display:grid;
+	height: 700px;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	text-align: center;
+	
+}
+.lista-sedes{
+	h3{
+		padding: 0px 20px;
+		font-size: 20px;
+	}
+
+	li{
+		font-size: 15px;
+	}
+	
+}
+
+.lista-contacto{
+	h3{
+		padding: 0px 20px;
+		font-size: 20px;
+	}
+	li{
+		font-size: 15px;
+	}
+}
+
+.suscripcion h3{
+	padding: 0px 20px;
+	font-size: 20px;
+}
+
+.redes ul{
+	font-size: 15px;
+}
+
+.bxl-instagram{
+	font-size: 20px;
+}
+
+.bxl-facebook-square{
+	font-size: 20px;
+}
+
+.bxl-whatsapp {
+	font-size: 20px;
+}
+
+.suscripcion button{
+	padding: 0px 30px;
+	font-size: 15px;
+}
+
+.grid-gallery{
+	display: grid;
+	grid-template-columns: 1fr;
+   }
+
+   .tecnologia h3{
+	font-size: 20px;
+	text-align: center;
+}
+
+#footer{
+	display:grid;
+	height: 700px;
+	grid-template-columns:1fr;
+	text-align: center;
+}
+
+/*PAGINA-CLASES*/
+.cards-container{
+	display: grid;
+	column-gap: 5px;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	}
+
+/*Pag-Pase de Prueba*/
+
+.contenedor-prueba{
+    background-image: url(../imagenes/fondo-prueba.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
+
+h2{
+	text-align: center;
+	font-family: "michroma";
+	color: yellowgreen;
+	font-size: 12px;
+	// background-color: white;
+	margin-top: 50px;    
+	}	
+	
+h1{
+	font-family: "michroma";
+	color:greenyellow;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 200px;   
+	}
+
+.bx-down-arrow-alt{
+	color: greenyellow;
+    font-size: 40px;
+    text-align: center;
+	}
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    // padding:70px;
+
+h2{
+	text-align: center;
+	margin-bottom: 8px;
+	}
+
+.form{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 3px solid;
+}
+
+.msj{
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+    border: 3px solid;
+}
+
+.button{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    // padding-left: 20px;
+    border-radius: 5px;
+    border: 3px solid;
+    background-color: white;   
+   }
+ }
+}
+
+
+
