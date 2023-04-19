@@ -1,0 +1,581 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "michroma";
+  src: url(../fuentes/Michroma/Michroma-Regular.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "michroma";
+  src: url(../fuentes/Michroma/Michroma-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/*ESTILOS HEADER*/
+header {
+  height: 300px;
+  width: 100%;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header h1 {
+  font-family: "michroma";
+  background-color: black;
+  color: greenyellow;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+header h1:hover {
+  color: azure;
+}
+header img {
+  opacity: 0.6;
+}
+header img:hover {
+  opacity: 1;
+}
+
+/*Estilos del NAV*/
+nav {
+  display: flex;
+}
+nav .container-fluid {
+  background: yellowgreen;
+  display: flex;
+  align-items: end;
+}
+nav .navbar-nav a {
+  color: white;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+/*ESTILOS DEL MAIN-INDEX (MAQUINAS, CLASES, INSTALACIONES)*/
+.contenedor-padre {
+  background-image: url(../imagenes/fondo-index.jpg);
+  background-position: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  padding: 10px 100px 50px;
+  /*Animaciones-Gradients*/
+}
+.contenedor-padre .maquinas, .contenedor-padre .clases, .contenedor-padre .instalaciones {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(188, 233, 121);
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: scroll;
+}
+.contenedor-padre .maquinas:hover {
+  background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+}
+.contenedor-padre .clases:hover {
+  background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+}
+.contenedor-padre .instalaciones:hover {
+  background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+}
+.contenedor-padre h3 {
+  font-family: "michroma";
+  font-size: 20px;
+  text-align: center;
+}
+
+.sobre-nosotros {
+  background-color: black;
+}
+.sobre-nosotros h3 {
+  font-family: "michroma";
+  text-align: center;
+  font-size: 40px;
+  color: yellowgreen;
+}
+.sobre-nosotros p {
+  font-family: "michroma";
+  padding: 20px;
+  color: yellowgreen;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+/*ESTILOS DEL FOOTER*/
+.pie-pagina {
+  background-image: url(../imagenes/fondo-index.jpg);
+  background-position: bottom right;
+  display: flex;
+  justify-content: space-evenly;
+  height: 250px;
+  padding: 20px 0px;
+}
+.pie-pagina .lista-sedes h3, .pie-pagina .lista-sedes ul {
+  color: rgb(222, 220, 220);
+}
+.pie-pagina .lista-sedes li {
+  list-style-type: none;
+  font-size: 20px;
+}
+.pie-pagina .lista-contacto {
+  color: rgb(222, 220, 220);
+}
+.pie-pagina .lista-contacto li {
+  list-style-type: none;
+  font-size: 20px;
+}
+.pie-pagina .suscripcion {
+  color: rgb(222, 220, 220);
+  font-size: 20px;
+}
+.pie-pagina .redes {
+  color: rgb(222, 220, 220);
+}
+.pie-pagina .redes ul {
+  list-style-type: none;
+  font-size: 25px;
+}
+.pie-pagina .redes .bxl-instagram {
+  color: white;
+  font-size: 50px;
+}
+.pie-pagina .redes .bxl-facebook-square {
+  color: white;
+  font-size: 50px;
+}
+.pie-pagina .redes .bxl-whatsapp {
+  color: white;
+  font-size: 50px;
+}
+
+#footer {
+  background-color: rgb(103, 102, 102);
+  background-position: bottom right;
+  display: flex;
+  justify-content: space-evenly;
+  height: 250px;
+  padding: 20px 0px;
+}
+#footer .lista-sedes h3, #footer .lista-sedes ul {
+  color: rgb(222, 220, 220);
+}
+#footer .lista-sedes li {
+  list-style-type: none;
+  font-size: 20px;
+}
+#footer .lista-contacto {
+  color: rgb(222, 220, 220);
+}
+#footer .lista-contacto li {
+  list-style-type: none;
+  font-size: 20px;
+}
+#footer .suscripcion {
+  color: rgb(222, 220, 220);
+  font-size: 20px;
+}
+#footer .redes {
+  color: rgb(222, 220, 220);
+}
+#footer .redes ul {
+  list-style-type: none;
+  font-size: 25px;
+}
+#footer .redes .bxl-instagram {
+  color: white;
+  font-size: 50px;
+}
+#footer .redes .bxl-facebook-square {
+  color: white;
+  font-size: 50px;
+}
+#footer .redes .bxl-whatsapp {
+  color: white;
+  font-size: 50px;
+}
+
+/*ESTILOS CARDS- PAG CLASES*/
+.cards-container {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+}
+.cards-container .card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /*overflow: scroll;*/
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 8px;
+}
+.cards-container .card-img {
+  position: relative;
+  width: 100%;
+}
+.cards-container img {
+  width: 100%;
+}
+.cards-container .card-titulo h4 {
+  font-size: 22px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 3px;
+  color: white;
+  /*background-color:hsla (0, 0%, 0%, 0.361);*/
+  width: 100%; /*opacity: 0;*/
+}
+.cards-container #title-zumba {
+  color: black;
+}
+
+/*PSEUDOCLASES*/
+.cards-container div.card:nth-child(1) {
+  background-color: rgb(188, 233, 121);
+}
+.cards-container div.card:nth-child(2) {
+  background-color: rgb(185, 187, 182);
+}
+.cards-container div.card:nth-child(3) {
+  background-color: rgb(188, 233, 121);
+}
+.cards-container div.card:nth-child(4) {
+  background-color: rgb(185, 187, 182);
+}
+
+/* PAG. MAQUINAS-GRID-GALLERY*/
+.grid-gallery {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 70px;
+  gap: 10px;
+  justify-items: center;
+  /*Transiciones-hover*/
+}
+.grid-gallery img {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  transition: width 1s, height 1s;
+}
+.grid-gallery img:hover {
+  opacity: 0.75;
+  width: 400px;
+  height: 400px;
+}
+
+.tecnologia {
+  /*display: flex;*/
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
+.tecnologia h3 {
+  font-family: "michroma";
+  display: flex;
+  color: yellowgreen;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.container div {
+  border: 2px solid;
+}
+
+/*Estilos Pag. Pase de Prueba*/
+.contenedor-prueba {
+  background-image: url(../imagenes/fondo-prueba.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor-prueba h2 {
+  text-align: center;
+  font-family: "michroma";
+  color: yellowgreen;
+  font-size: 20px;
+  margin-top: 150px;
+}
+.contenedor-prueba h1 {
+  font-family: "michroma";
+  color: greenyellow;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 400px;
+}
+.contenedor-prueba .bx-down-arrow-alt {
+  color: greenyellow;
+  font-size: 80px;
+  text-align: center;
+}
+
+.contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  padding: 70px;
+}
+.contenedor-formulario .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+}
+.contenedor-formulario h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contenedor-formulario .form {
+  width: 45%;
+  height: 50px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 3px solid;
+  transition: 1s;
+}
+.contenedor-formulario .form:hover {
+  background-color: yellowgreen;
+}
+.contenedor-formulario .msj {
+  width: 90%;
+  padding: 50px;
+  border-radius: 5px;
+  border: 3px solid;
+  transition: 1s;
+}
+.contenedor-formulario .msj:hover {
+  background-color: yellowgreen;
+}
+.contenedor-formulario .button {
+  margin-top: 20px;
+  width: 45%;
+  height: 60px;
+  border-radius: 5px;
+  border: 3px solid;
+  background-color: white;
+  transition: 1s;
+}
+.contenedor-formulario .button:hover {
+  background-color: yellowgreen;
+}
+
+header {
+  background-image: url(../imagenes/banner3.jpg);
+}
+
+/*DISEÑO CELULAR-media queries-INDEX*/
+@media screen and (max-width: 768px) {
+  .pie-pagina {
+    background-position: bottom right;
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .cards-container {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  #footer {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tecnologia h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*Menu Navegacion*/
+  nav {
+    display: grid;
+    align-items: end;
+  }
+  .container-fluid {
+    background: yellowgreen;
+    display: flex;
+  }
+  .navbar-nav a {
+    color: white;
+    font-size: 20px;
+    align-content: end;
+  }
+  /*MAIN-Maquinas,Clases,Instalaciones*/
+  .contenedor-padre {
+    display: grid;
+    column-gap: 5px;
+    height: 1000px;
+    justify-content: center;
+  }
+  .sobre-nosotros {
+    justify-content: center;
+  }
+  .sobre-nosotros h3 {
+    font-size: 20px;
+  }
+  .sobre-nosotros p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  /*FOOTER*/
+  .pie-pagina {
+    background-position: bottom right;
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .lista-sedes h3 {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+  .lista-sedes li {
+    font-size: 15px;
+  }
+  .lista-contacto h3 {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+  .lista-contacto li {
+    font-size: 15px;
+  }
+  .suscripcion h3 {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+  .redes ul {
+    font-size: 15px;
+  }
+  .bxl-instagram {
+    font-size: 20px;
+  }
+  .bxl-facebook-square {
+    font-size: 20px;
+  }
+  .bxl-whatsapp {
+    font-size: 20px;
+  }
+  .suscripcion button {
+    padding: 0px 30px;
+    font-size: 15px;
+  }
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tecnologia h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /*PAGINA-CLASES*/
+  .cards-container {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  /*Pag-Pase de Prueba*/
+  .contenedor-prueba {
+    background-image: url(../imagenes/fondo-prueba.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-prueba h2 {
+    text-align: center;
+    font-family: "michroma";
+    color: yellowgreen;
+    font-size: 12px;
+    margin-top: 50px;
+  }
+  .contenedor-prueba h1 {
+    font-family: "michroma";
+    color: greenyellow;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 200px;
+  }
+  .contenedor-prueba .bx-down-arrow-alt {
+    color: greenyellow;
+    font-size: 40px;
+    text-align: center;
+  }
+  .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+  }
+  .contenedor-formulario h2 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .contenedor-formulario .form {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 3px solid;
+  }
+  .contenedor-formulario .msj {
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+    border: 3px solid;
+  }
+  .contenedor-formulario .button {
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: 3px solid;
+    background-color: white;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
